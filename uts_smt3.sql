@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Nov 2021 pada 14.41
+-- Waktu pembuatan: 24 Nov 2021 pada 03.44
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 8.0.11
 
@@ -40,7 +40,10 @@ CREATE TABLE `detail` (
 
 INSERT INTO `detail` (`id_detail`, `id_matakuliah`, `pertemuan`, `materi`) VALUES
 (1, 1, 'Pertemuan 1', 'HTML'),
-(4, 2, 'Pertemuan 1', 'Variable');
+(4, 2, 'Pertemuan 1', 'Variable'),
+(26, 1, 'Pertemuan 2', 'CSS'),
+(28, 1, 'Pertemuan 3', 'JavaScript'),
+(29, 3, 'Pertemuan 1', 'Photoshop');
 
 -- --------------------------------------------------------
 
@@ -68,7 +71,8 @@ INSERT INTO `matakuliah` (`id`, `kode`, `nama`, `deskripsi`) VALUES
 (6, 'DT006', 'BAHASA INGGRIS II', NULL),
 (9, 'DT007', 'BAHASA INDONESIA', NULL),
 (12, 'DT008', 'SUCCESS SKIL', 'Membahas tentang potensi diri sendiri, agar dapat memanfaatkan semaksimal mungkin'),
-(18, 'DT679', 'STRUKTUR DATA', '');
+(18, 'DT679', 'STRUKTUR DATA', ''),
+(20, 'DT322', 'FISIKA', '');
 
 --
 -- Indexes for dumped tables
@@ -95,13 +99,13 @@ ALTER TABLE `matakuliah`
 -- AUTO_INCREMENT untuk tabel `detail`
 --
 ALTER TABLE `detail`
-  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT untuk tabel `matakuliah`
 --
 ALTER TABLE `matakuliah`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
