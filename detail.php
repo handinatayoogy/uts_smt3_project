@@ -2,7 +2,13 @@
 
 require 'function.php';
 
-$id_mk = $_GET["id"];
+session_start();
+
+if (empty($_SESSION)) {
+    $_SESSION['id_mk'] = $_GET["id"];
+}
+
+$id_mk = $_SESSION["id_mk"];
 
 $mk = query("SELECT * FROM matakuliah WHERE id = $id_mk")[0];
 

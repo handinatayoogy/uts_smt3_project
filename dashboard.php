@@ -2,6 +2,12 @@
 
 require 'function.php';
 
+session_start();
+
+if (!empty($_SESSION)) {
+    session_destroy();
+}
+
 //query semua data
 $matakuliah = query('SELECT * FROM matakuliah');
 
