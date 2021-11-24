@@ -66,6 +66,7 @@ if (isset($_GET["hal"])) {
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -78,16 +79,31 @@ if (isset($_GET["hal"])) {
         }
 
         .navbar {
-            background-color: #062538;;
+            background-color: #062538;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .judul_nav a{
+            list-style: none;
+            text-decoration: none;
         }
     </style>
 
     <title>Detail Mata Kuliah</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container">
-            <span class="navbar-brand mb-0 h1">D3TI AMIKOM</span>
+            <a class="navbar-brand" href="dashboard.php">D3TI AMIKOM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="dashboard.php">Home</a>
+                    <a class="nav-link active" href="detail.php">Detail</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -152,8 +168,6 @@ if (isset($_GET["hal"])) {
             </div>
         </div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

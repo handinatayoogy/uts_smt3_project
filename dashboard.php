@@ -90,9 +90,18 @@ if (isset($_GET["hal"])) {
     <title>Dashboard CRUD</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container">
-            <span class="navbar-brand mb-0 h1">D3TI AMIKOM</span>
+            <a class="navbar-brand" href="dashboard.php">D3TI AMIKOM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="dashboard.php">Home</a>
+                    <a class="nav-link" href="">Detail</a>
+                </div>
+            </div>
         </div>
     </nav>
 
